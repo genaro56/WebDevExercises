@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="C:\Users\Genaro\Desktop\css\bootstrap.css">
-<link rel="stylesheet" href="C:\Users\Genaro\Desktop\css\bootstrap-grid.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GirlDevelopIt</title>
 </head>
 
 <body>
-    <br>
-    <div id="cuerpo" class="container-fluid">
+    <div class="container-fluid">
 
-        <div id="top" class="container-fluid">
+        <div class="container-fluid">
             <header>
                 <img src="https://stackoverflow.blog/wp-content/uploads/2017/08/wordmark-tagline-pink-2.png" class="img-fluid" alt="Responsive image"
                     width="400px">
             </header>
         </div>
         <br>
-        
-        <div id="About" class="container-fluid">
-            <h1 id="bruh1">About</h1>
+
+        <div class="container-fluid">
+            <h1 class="bruh1">About</h1>
         </div>
 
         <div class="row">
             <div class="col-md-6">
-                <p class="myclass">
-                    It can be indimidating for women to learn and ask questions when they are in an
-                    <b>extreme minority</b>. While open and welcoming ,today's budding developer community is up to
-                    <b>91% male.</b> If we empower more females with the confidence in their technological capabilities
-                    <i>we can begin to change this landscape.</i>
-                </p>
-                <br>
+                <table class="table">
+                    <th id="header1">
+                        <p>
+                            It can be indimidating for women to learn and ask questions when they are in an
+                            <b>extreme minority</b>. While open and welcoming ,today's budding developer community is up to
+                            <b>91% male.</b> If we empower more females with the confidence in their technological capabilities
+                            <i>we can begin to change this landscape.</i>
+                        </p>
+                    </th>
+                </table>
             </div>
 
         </div>
@@ -78,57 +82,58 @@
             <h1>Upcoming Classes</h1>
         </div>
 
-        <div class="row">
-            <div class="col-md-8">
-                <table border="1" style="width: 80%">
-                    <tr>
-                        <th>
-                            <b>Location</b>
-                        </th>
-                        <th>
-                            <b>Topic</b>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>New York</td>
-                        <td>Javascript & jQuery</td>
-                    </tr>
-                    <tr>
-                        <td>San Francisco</td>
-                        <td>HTML & CSS</td>
-                    </tr>
-                </table>
-            </div>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">
+                        <b>Location</b>
+                    </th>
+                    <th scope="col">
+                        <b>Topic</b>
+                    </th>
+                </tr>
 
-        </div>
+                <tr>
+                    <td scope="row">New York</td>
+                    <td scope="row">Javascript & jQuery</td>
+                </tr>
+                <tr>
+                    <td>San Francisco</td>
+                    <td>HTML & CSS</td>
+                </tr>
+        </table>
 
         <div>
             <h1>Sign Up! </h1>
         </div>
 
         <form>
-            <div class="form-group">
-                <label for="InputName">Name:</label>
-                <input type=name class="form-control" id="exampleInputEmail1" aria-describedby="NameHelp" placeholder="Enter name" style="width: 25%">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" style="width: 50%">
-            </div>
-            <div class="location">
-                <label for="Location">Location:</label>
-                <select class="form-control">
-                    <option>San Francisco</option>
-                    <option>New-York</option>
-                    <option>Sydney</option>
-                    <option>Columbus</option>
-                </select>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="InputName">Name:</label>
+                        <input type=name class="form-control" id="exampleInputEmail1" aria-describedby="NameHelp" placeholder="Enter name" style="width: 25%">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" style="width: 50%">
+                    </div>
+                    <div class="location">
+                        <label for="Location">Location:</label>
+                        <select class="form-control">
+                            <option>San Francisco</option>
+                            <option>New-York</option>
+                            <option>Sydney</option>
+                            <option>Columbus</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <br>
 
             <div class="form-group form-check">
                 <div>
-                    <table border="1" style="width: 100px">
+                    <table>
                         <label for="table">Gender</label>
                         <tr>
                             <div class="col-md-6">
@@ -146,9 +151,11 @@
                 <br>
 
                 <div class="row">
-                    <div class="form-group">
-                        <label for="experience">Experience:</label>
-                        <textarea class="form-control" rows="5" id="experience" style="width: 150%"></textarea>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label for="experience">Experience:</label>
+                            <textarea class="form-control" rows="5" id="experience" style="width: 150%"></textarea>
+                        </div>
                     </div>
                 </div>
 
